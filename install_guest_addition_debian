@@ -1,0 +1,11 @@
+### How to Install Virtualbox Guest Additions on Debian Step by Step ###
+
+# apt-get update && apt-get upgrade
+# apt-get install build-essential module-assistant
+# m-a prepare
+> insert cd guest_additions
+# mount /media/cdrom
+> Under /media/cdrom directory there’s a shell script named VboxLinuxAdditions.run. Run this script.
+# sh /media/cdrom/VBoxLinuxAdditions.run
+
+** Note that building kernel module must be successful. Now restart your virtual machine. You should be able to enter full screen mode by pressing Right Ctrl + F. **
